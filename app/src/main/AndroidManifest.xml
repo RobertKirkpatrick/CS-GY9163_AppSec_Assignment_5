@@ -81,23 +81,25 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
-        <receiver
-            android:name=".SMSReceiver"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
-            </intent-filter>
-        </receiver>
+        <!--
+       //<receiver
+           //android:name=".SMSReceiver"
+         //  android:enabled="true"
+           //android:exported="true">
+           //<intent-filter>
+             //  <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+           //</intent-filter>
+       //</receiver>
 
-        <activity android:name=".LoggingActivity"></activity>
-        <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+       //<activity android:name=".LoggingActivity"></activity>
+       -->
+   <activity android:name=".MainActivity">
+           <intent-filter>
+               <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-    </application>
+               <category android:name="android.intent.category.LAUNCHER" />
+           </intent-filter>
+       </activity>
+   </application>
 
 </manifest>
